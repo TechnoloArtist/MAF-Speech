@@ -1,0 +1,599 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Primary Meta Tags -->
+  <!-- TODO: Replace with your paper title and author names -->
+  <meta name="title" content="MAF-Speech">
+  <!-- TODO: Write a compelling 150-160 character description of your research -->
+  <meta name="description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
+  <!-- TODO: Add 5-10 relevant keywords for your research area -->
+  <meta name="keywords" content="KEYWORD1, KEYWORD2, KEYWORD3, machine learning, computer vision, AI">
+  <!-- TODO: List all authors -->
+  <meta name="author" content="FIRST_AUTHOR_NAME, SECOND_AUTHOR_NAME">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="article">
+  <!-- TODO: Replace with your institution or lab name -->
+  <meta property="og:site_name" content="INSTITUTION_OR_LAB_NAME">
+  <!-- TODO: Same as paper title above -->
+  <meta property="og:title" content="PAPER_TITLE">
+  <!-- TODO: Same as description above -->
+  <meta property="og:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
+  <!-- TODO: Replace with your actual website URL -->
+  <meta property="og:url" content="https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE">
+  <!-- TODO: Create a 1200x630px preview image and update path -->
+  <meta property="og:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="PAPER_TITLE - Research Preview">
+  <meta property="article:published_time" content="2024-01-01T00:00:00.000Z">
+  <meta property="article:author" content="FIRST_AUTHOR_NAME">
+  <meta property="article:section" content="Research">
+  <meta property="article:tag" content="KEYWORD1">
+  <meta property="article:tag" content="KEYWORD2">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- TODO: Replace with your lab/institution Twitter handle -->
+  <meta name="twitter:site" content="@YOUR_TWITTER_HANDLE">
+  <!-- TODO: Replace with first author's Twitter handle -->
+  <meta name="twitter:creator" content="@AUTHOR_TWITTER_HANDLE">
+  <!-- TODO: Same as paper title above -->
+  <meta name="twitter:title" content="PAPER_TITLE">
+  <!-- TODO: Same as description above -->
+  <meta name="twitter:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
+  <!-- TODO: Same as social preview image above -->
+  <meta name="twitter:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
+  <meta name="twitter:image:alt" content="PAPER_TITLE - Research Preview">
+
+  <!-- Academic/Research Specific -->
+  <meta name="citation_title" content="PAPER_TITLE">
+  <meta name="citation_author" content="FIRST_AUTHOR_LAST, FIRST_AUTHOR_FIRST">
+  <meta name="citation_author" content="SECOND_AUTHOR_LAST, SECOND_AUTHOR_FIRST">
+  <meta name="citation_publication_date" content="2024">
+  <meta name="citation_conference_title" content="CONFERENCE_NAME">
+  <meta name="citation_pdf_url" content="https://YOUR_DOMAIN.com/static/pdfs/paper.pdf">
+  
+  <!-- Additional SEO -->
+  <meta name="theme-color" content="#2563eb">
+  <meta name="msapplication-TileColor" content="#2563eb">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://ajax.googleapis.com">
+  <link rel="preconnect" href="https://documentcloud.adobe.com">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+
+
+  <!-- TODO: Replace with your paper title and authors -->
+  <title>MAF-Speech</title>
+  
+  <!-- Favicon and App Icons -->
+  <link rel="icon" type="image/x-icon" href="static/images/tubiao.ico">
+  <link rel="apple-touch-icon" href="static/images/tubiao.ico">
+  
+  <!-- Critical CSS - Load synchronously -->
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+  
+  <!-- Non-critical CSS - Load asynchronously -->
+  <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  
+  <!-- Fallback for browsers that don't support preload -->
+  <noscript>
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  </noscript>
+  
+  <!-- Fonts - Optimized loading -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Defer non-critical JavaScript -->
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script defer src="static/js/bulma-carousel.min.js"></script>
+  <script defer src="static/js/bulma-slider.min.js"></script>
+  <script defer src="static/js/index.js"></script>
+  
+  <!-- Structured Data for Academic Papers -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "headline": "MAF-Speech",
+    "description": "BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS",
+    "author": [
+      {
+        "@type": "Person",
+        "name": "FIRST_AUTHOR_NAME",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "INSTITUTION_NAME"
+        }
+      },
+      {
+        "@type": "Person",
+        "name": "SECOND_AUTHOR_NAME",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "INSTITUTION_NAME"
+        }
+      }
+    ],
+    "datePublished": "2024-01-01",
+    "publisher": {
+      "@type": "Organization",
+      "name": "CONFERENCE_OR_JOURNAL_NAME"
+    },
+    "url": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE",
+    "image": "https://YOUR_DOMAIN.com/static/images/social_preview.png",
+    "keywords": ["KEYWORD1", "KEYWORD2", "KEYWORD3", "machine learning", "computer vision"],
+    "abstract": "FULL_ABSTRACT_TEXT_HERE",
+    "citation": "BIBTEX_CITATION_HERE",
+    "isAccessibleForFree": true,
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "mainEntity": {
+      "@type": "WebPage",
+      "@id": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE"
+    },
+    "about": [
+      {
+        "@type": "Thing",
+        "name": "RESEARCH_AREA_1"
+      },
+      {
+        "@type": "Thing", 
+        "name": "RESEARCH_AREA_2"
+      }
+    ]
+  }
+  </script>
+  
+  <!-- Website/Organization Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "INSTITUTION_OR_LAB_NAME",
+    "url": "https://YOUR_INSTITUTION_WEBSITE.com",
+    "logo": "https://YOUR_DOMAIN.com/static/images/tubiao.ico",
+    "sameAs": [
+      "https://twitter.com/YOUR_TWITTER_HANDLE",
+      "https://github.com/YOUR_GITHUB_USERNAME"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+  
+  <!-- More Works Dropdown -->
+  <!-- <div class="more-works-container">
+    <button class="more-works-btn" onclick="toggleMoreWorks()" title="View More Works from Our Lab">
+      <i class="fas fa-flask"></i>
+      More Works
+      <i class="fas fa-chevron-down dropdown-arrow"></i>
+    </button>
+    <div class="more-works-dropdown" id="moreWorksDropdown">
+      <div class="dropdown-header">
+        <h4>More Works from Our Lab</h4>
+        <button class="close-btn" onclick="toggleMoreWorks()">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="works-list">
+        <!-- TODO: Replace with your lab's related works -->
+        <!-- <a href="https://arxiv.org/abs/PAPER_ID_1" class="work-item" target="_blank">
+          <div class="work-info">
+            <!-- TODO: Replace with actual paper title -->
+            <!-- <h5>Paper Title 1</h5>
+            <!-- TODO: Replace with brief description -->
+            <!-- <p>Brief description of the work and its main contribution.</p>
+            <!-- TODO: Replace with venue and year -->
+            <!-- <span class="work-venue">Conference/Journal 2024</span>
+          </div>
+          <i class="fas fa-external-link-alt"></i>
+        </a>
+        <!-- TODO: Add more related works or remove extra items -->
+        <!-- <a href="https://arxiv.org/abs/PAPER_ID_2" class="work-item" target="_blank">
+          <div class="work-info">
+            <h5>Paper Title 2</h5>
+            <p>Brief description of the work and its main contribution.</p>
+            <span class="work-venue">Conference/Journal 2023</span>
+          </div>
+          <i class="fas fa-external-link-alt"></i>
+        </a>
+        <a href="https://arxiv.org/abs/PAPER_ID_3" class="work-item" target="_blank">
+          <div class="work-info">
+            <h5>Paper Title 3</h5>
+            <p>Brief description of the work and its main contribution.</p>
+            <span class="work-venue">Conference/Journal 2023</span>
+          </div>
+          <i class="fas fa-external-link-alt"></i>
+        </a>
+      </div>
+    </div>
+  </div> -->
+
+  <main id="main-content">
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <!-- TODO: Replace with your paper title -->
+            <h1 class="title is-1 publication-title">MAF-Speech: Cost-Aware Multi-Agent Framework for Multi-Dimensional Speech Generation</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- TODO: Replace with your paper authors and their personal links -->
+              <span class="author-block">
+                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <span class="author-block">
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  <span class="author-block">
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                  </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <!-- TODO: Replace with your institution and conference/journal info -->
+                    <span class="author-block">Institution Name<br>Conference name and year</span>
+                    <!-- TODO: Remove this line if no equal contribution -->
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- TODO: Update with your arXiv paper ID -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                    <!-- TODO: Add your supplementary material PDF or remove this section -->
+                    <span class="link-block">
+                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supplementary</span>
+                    </a>
+                  </span>
+
+                  <!-- TODO: Replace with your GitHub repository URL -->
+                  <!-- <span class="link-block">
+                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span> -->
+
+                <!-- TODO: Update with your arXiv paper ID -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Paper abstract 
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          TODO: Replace with your paper abstract
+          <p>
+            Instruction-driven speech generation has recently attracted growing attention, yet existing approaches often struggle with complex user requests that involve simultaneous control over speaker identity, emotional state, and acoustic environment. In particular, most current systems rely on single-agent pipelines, limiting their ability to dynamically interpret instructions and coordinate multiple attributes in real time.To address these challenges, we propose a multi-agent speech generation framework centered on the Qwen-2.5-7B model. The large language model acts as a task orchestrator, distinguishing between speech generation and speech cloning, parsing user instructions, and scheduling specialized agents for identity, emotion, and environmental effects. A fixed-priority pipeline ensures latency constraints, while reinforcement learning refines dynamic scheduling policies. The system further leverages speaker embeddings and a retrieval-augmented corpus to strengthen identity–emotion coupling.Experimental results demonstrate that our framework achieves higher speaker similarity, improved naturalness (MOS), and stronger alignment with user instructions compared to single-agent baselines, highlighting the effectiveness of large-model-driven multi-agent collaboration for controllable speech synthesis.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ End paper abstract -->
+
+
+<!-- Method Overview -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3 has-text-centered">Method Overview</h2>
+          <div class="has-text-centered" style="max-width: 100%; overflow: hidden;">
+            <object data="static/images/kt.pdf#toolbar=0" type="application/pdf" style="width: 100%; max-width: 100%; height: 580px; margin: 0 auto; display: block; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+              <p>无法直接预览 PDF。您可以 <a href="static/images/kt.pdf" target="_blank" rel="noopener">点击这里下载查看</a>。</p>
+            </object>
+            <p class="subtitle has-text-centered" style="margin-top: 1rem;">
+              The overall flowchart of this method.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End method overview -->
+
+
+<!-- Audio samples section -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Audio Samples</h2>
+      <div class="subtitle has-text-centered">
+        <!-- TODO: Replace with your audio samples description -->
+        <p>Listen to examples of our voice generation system with different emotions and speakers.</p>
+      </div>
+      
+      <!-- Audio samples grid -->
+      <div class="columns is-multiline is-centered">
+        
+        <!-- Sample 1 -->
+        <div class="column is-one-third">
+          <div class="audio-sample-card">
+            <h4 class="title is-5">Disgusted Voice</h4>
+            <p class="subtitle is-6">A little boy impatiently swats away flies:"I absolutely despise flies! They are filthy, annoying pests that buzz around incessantly, spreading germs and landing on everything. Their presence ruins peaceful moments and makes me feel uneasy. I cant stand them!"</p>
+            <audio controls preload="metadata" class="audio-player">
+              <!-- TODO: Replace with your audio file -->
+              <source src="static/voice/ChMF.wav" type="audio/wav">
+              <source src="static/voice/ChMF.wav" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+            <div class="audio-info">
+              <span class="tag is-primary">Disgusted</span>
+              <span class="tag is-info">Children</span>
+              <span class="tag is-light">Children - English</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sample 2 -->
+        <div class="column is-one-third">
+          <div class="audio-sample-card">
+            <h4 class="title is-5">Happy Voice</h4>
+            <p class="subtitle is-6">"A woman in her twenties, in a sunny park, happily greets her friend: “Hey, the weather is amazing today! Let’s go sit by the lake and take some photos as a keepsake."</p>
+            <audio controls preload="metadata" class="audio-player">
+              <!-- TODO: Replace with your audio file -->
+              <source src="static/voice/MiFP.wav" type="audio/wav">
+              <source src="static/voice/MiFP.wav" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+            <div class="audio-info">
+              <span class="tag is-danger">Angry</span>
+              <span class="tag is-info">Male</span>
+              <span class="tag is-light">Speaker: 9017</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sample 3 -->
+        <div class="column is-one-third">
+          <div class="audio-sample-card">
+            <h4 class="title is-5">Sad Female Voice</h4>
+            <p class="subtitle is-6">"Having lost the most important thing, the whole world seems..."</p>
+            <audio controls preload="metadata" class="audio-player">
+              <!-- TODO: Replace with your audio file -->
+              <source src="static/audio/sample_sad_female.wav" type="audio/wav">
+              <source src="static/audio/sample_sad_female.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+            <div class="audio-info">
+              <span class="tag is-warning">Sad</span>
+              <span class="tag is-info">Female</span>
+              <span class="tag is-light">Speaker: 11614</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sample 4 -->
+        <div class="column is-one-third">
+          <div class="audio-sample-card">
+            <h4 class="title is-5">Fearful Voice</h4>
+            <p class="subtitle is-6">一个成年男子在雷雨天害怕地说："刚才那道蓝光是劈中变压器了吗？全黑了整条街全黑了！"</p>
+            <audio controls preload="metadata" class="audio-player">
+              <!-- TODO: Replace with your audio file -->
+              <source src="static/voice/maleT.wav" type="audio/wav">
+              <source src="static/voice/maleT.wav" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+            <div class="audio-info">
+              <span class="tag is-grey">Fearful</span>
+              <span class="tag is-info">Male</span>
+              <span class="tag is-light">Male - Chinese</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sample 5 -->
+        <div class="column is-one-third">
+          <div class="audio-sample-card">
+            <h4 class="title is-5">Exclamation Voice</h4>
+            <p class="subtitle is-6">"大海真是太神奇了，她蕴藏着无尽的力量，又如此宽广让人感觉自己的烦恼都变得微不足道。"</p>
+            <audio controls preload="metadata" class="audio-player">
+              <!-- TODO: Replace with your audio file -->
+              <source src="static/audio/ccdfg.wav" type="audio/wav">
+              <source src="static/audio/sample_fearful_female.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+            <div class="audio-info">
+              <span class="tag is-dark">Exclamation</span>
+              <span class="tag is-info">Female</span>
+              <span class="tag is-light">Middle Age - Chinese</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sample 6 -->
+        <div class="column is-one-third">
+          <div class="audio-sample-card">
+            <h4 class="title is-5">Lost Voice</h4>
+            <p class="subtitle is-6">"我简直不敢相信一切都结束了。走在这拥挤的街道上只让我感觉更加......孤独"</p>
+            <audio controls preload="metadata" class="audio-player">
+              <!-- TODO: Replace with your audio file -->
+              <source src="static/audio/add_now.wav" type="audio/wav">
+              <source src="static/audio/add_now.wav" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+            <div class="audio-info">
+              <span class="tag is-grey">Lost</span>
+              <span class="tag is-info">Male</span>
+              <span class="tag is-light">Male - Chinese</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sample 7 -->
+        <div class="column is-one-third">
+          <div class="audio-sample-card">
+            <h4 class="title is-5">Tianjin Dialect Voice</h4>
+            <p class="subtitle is-6">"这风刮得呼啦啦的，好像要把人卷走似的，吓得我心直突突。"</p>
+            <audio controls preload="metadata" class="audio-player">
+              <!-- TODO: Replace with your audio file -->
+              <source src="static/audio/O_F_tj_fear_17_wind.wav" type="audio/wav">
+              <source src="static/audio/C_M_zh_happy_new_park.wav" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+            <div class="audio-info">
+              <span class="tag is-grey">Fearful</span>
+              <span class="tag is-info">Female</span>
+              <span class="tag is-light">Old - Chinese</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sample 8 -->
+        <div class="column is-one-third">
+          <div class="audio-sample-card">
+            <h4 class="title is-5">Exclamation Voice</h4>
+            <p class="subtitle is-6">"哎呀，这商场广播一遍一遍放，吵得我脑壳痛，真想快点离开。"</p>
+            <audio controls preload="metadata" class="audio-player">
+              <!-- TODO: Replace with your audio file -->
+              <source src="static/audio/O_M_sc_anger_mall.wav" type="audio/wav">
+              <source src="static/audio/O_M_sc_anger_mall.wav" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+            <div class="audio-info">
+              <span class="tag is-dark">Exclamation</span>
+              <span class="tag is-info">Female</span>
+              <span class="tag is-light">Middle Age - Chinese</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sample 9 -->
+        <div class="column is-one-third">
+          <div class="audio-sample-card">
+            <h4 class="title is-5">Joyful Voice</h4>
+            <p class="subtitle is-6">"那边的跷跷板有好多小朋友在玩呢！他们笑得好开心呀，我也要跑过去和他们一起玩跷跷板！"</p>
+            <audio controls preload="metadata" class="audio-player">
+              <!-- TODO: Replace with your audio file -->
+              <source src="static/audio/C_M_zh_happy_new_park.wav" type="audio/wav">
+              <source src="static/audio/C_M_zh_happy_new_park.wav" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+            <div class="audio-info">
+              <span class="tag is-grey">Joyful</span>
+              <span class="tag is-info">Children</span>
+              <span class="tag is-light">Children - Chinese</span>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End audio samples -->
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <div class="bibtex-header">
+        <h2 class="title">BibTeX</h2>
+        <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
+          <i class="fas fa-copy"></i>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <pre id="bibtex-code"><code>@article{YourPaperKey2024,
+  title={Your Paper Title Here},
+  author={First Author and Second Author and Third Author},
+  journal={Conference/Journal Name},
+  year={2024},
+  url={https://your-domain.com/your-project-page}
+}</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
